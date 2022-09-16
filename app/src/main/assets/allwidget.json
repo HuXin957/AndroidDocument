@@ -1,0 +1,26 @@
+[
+  {
+    "name": "LinearLayout",
+    "cnName": "线性布局"
+  },
+  {
+    "name": "RelativeLayout",
+    "cnName": "相对布局"
+  },
+  {
+    "name": "FrameLayout",
+    "cnName": "帧布局"
+  },
+  {
+    "name": "ConstraintLayout",
+    "cnName": "约束布局"
+  },
+  {
+    "name": "GridLayout",
+    "cnName": "网格布局"
+  },
+  {
+    "name": "TableLayout",
+    "cnName": "表格布局"
+  }
+]
