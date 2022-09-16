@@ -12,13 +12,6 @@ public class MyApp extends Application {
 
     private static MyApp instance;
 
-    private String cookie;
-
-
-    private int isJoin = -1;//0 未加 1 已加
-    private boolean isChange;//true party 加入或者删除 false 无变化
-
-
     public static MyApp getInstance() {
         if (instance == null) {
             synchronized (MyApp.class) {
