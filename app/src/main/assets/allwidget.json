@@ -1,25 +1,31 @@
 [
   {
+    "id": 1,
     "name": "LinearLayout",
     "cnName": "线性布局"
   },
   {
+    "id": 2,
     "name": "RelativeLayout",
     "cnName": "相对布局"
   },
   {
+    "id": 3,
     "name": "FrameLayout",
     "cnName": "帧布局"
   },
   {
+    "id": 4,
     "name": "ConstraintLayout",
     "cnName": "约束布局"
   },
   {
+    "id": 5,
     "name": "GridLayout",
     "cnName": "网格布局"
   },
   {
+    "id": 6,
     "name": "TableLayout",
     "cnName": "表格布局"
   }
