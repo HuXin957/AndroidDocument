@@ -35,7 +35,10 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-
+    /**基础库*/
+    implementation project(':baseframework')
+    /**Tabbar*/
+    implementation 'com.github.kongzue:Tabbar:1.5.6'
 
     /**列表start*/
     implementation "androidx.recyclerview:recyclerview:1.2.1"
@@ -43,8 +46,7 @@ dependencies {
     /**列表 end*/
     /**recyclerview 万能适配器*/
     implementation 'com.gitee.raoqian156:RV-Adapter:v1.0.9'
-    /**解析json*/
-    implementation 'com.google.code.gson:gson:2.9.1'
+
     /**打印日志*/
     implementation 'com.orhanobut:logger:2.2.0'
 

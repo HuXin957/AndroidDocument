@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">DocAndroid</string>
+    <string name="tab_layout">布局</string>
+    <string name="tab_widget">组件</string>
     <string name="lin_desc">线性布局（LinearLayout）主要以水平或垂直方式来排列界面中的控件。并将控件排列到一条直线上。在线性布局中，如果水平排列，垂直方向上只能放一个控件，如果垂直排列，水平方向上也只能方一个控件。</string>
     <string name="lin_orientation">orientation属性</string>
     <string name="lin_gravity">gravity属性</string>

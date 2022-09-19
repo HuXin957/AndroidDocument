@@ -4,6 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_linearlayout.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/fr_layout.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/fragment_layout.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/fragment_widget.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/item_main.xml" value="0.26145833333333335" />
+        <entry key="app/src/main/res/layout/recylerview.xml" value="0.26145833333333335" />
+        <entry key="baseframework/src/main/res/layout/layout_baseframework_holder.xml" value="0.15208333333333332" />
+        <entry key="baseframework/src/main/res/layout/layout_system_toast.xml" value="0.26145833333333335" />
+        <entry key="baseframework/src/main/res/layout/swipeback_layout.xml" value="0.26145833333333335" />
+        <entry key="baseframework/src/main/res/layout/title.xml" value="0.26145833333333335" />
       </map>
     </option>
   </component>

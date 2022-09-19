@@ -1,14 +1,13 @@
 package com.docandroid;
 
-import android.app.Application;
-
+import com.baseframework.BaseApp;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.FormatStrategy;
 import com.orhanobut.logger.Logger;
 import com.orhanobut.logger.PrettyFormatStrategy;
 
 
-public class MyApp extends Application {
+public class MyApp extends BaseApp<MyApp> {
 
     private static MyApp instance;
 
@@ -23,6 +22,11 @@ public class MyApp extends Application {
         return instance;
     }
 
+
+    @Override
+    public void init() {
+
+    }
 
     @Override
     public void onCreate() {

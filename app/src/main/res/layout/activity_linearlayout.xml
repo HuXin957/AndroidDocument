@@ -1,129 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:padding="@dimen/d16dp"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <include layout="@layout/title" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:padding="@dimen/d16dp"
+        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/lin_desc" />
-
-        <TextView
-            android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
-            android:text="@string/lin_orientation"
-            android:textSize="@dimen/d20sp"
-            android:layout_height="wrap_content"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:ignore="DisableBaselineAlignment">
+            android:orientation="vertical">
 
 
-            <LinearLayout
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/lin_desc" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/right"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                tools:ignore="UseCompoundDrawables">
+                android:layout_marginTop="16dp"
+                android:text="@string/lin_orientation"
+                android:textSize="@dimen/d20sp" />
 
-                <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="DisableBaselineAlignment">
+
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/lin_h" />
+                    android:layout_marginEnd="@dimen/right"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
-                <ImageView
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lin_h" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/lin_h"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/lin_h"
-                    tools:ignore="ContentDescription" />
+                    android:layout_marginStart="@dimen/left"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lin_v" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/lin_v"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
-            <LinearLayout
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/left"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                tools:ignore="UseCompoundDrawables">
+                android:text="@string/lin_gravity"
+                android:textSize="@dimen/d20sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/lin_v" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lin_gravity_desc" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/lin_v"
-                    tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/lin_layout_weight"
+                android:textSize="@dimen/d20sp" />
 
-            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lin_layout_weight_desc" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lin_weight" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lin_w1_b2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lin_w1_b2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lin_w1_b1b2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lin_w1_b1b2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lin_w3_b1_w2_b2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lin_w3_b1_w2_b2" />
         </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:text="@string/lin_gravity"
-            android:textSize="@dimen/d20sp"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:text="@string/lin_gravity_desc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
-            android:text="@string/lin_layout_weight"
-            android:textSize="@dimen/d20sp"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:text="@string/lin_layout_weight_desc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:src="@mipmap/lin_weight"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:text="@string/lin_w1_b2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:src="@mipmap/lin_w1_b2"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:text="@string/lin_w1_b1b2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:src="@mipmap/lin_w1_b1b2"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:text="@string/lin_w3_b1_w2_b2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:src="@mipmap/lin_w3_b1_w2_b2"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-</ScrollView>
+    </ScrollView>
+</LinearLayout>
