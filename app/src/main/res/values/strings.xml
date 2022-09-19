@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">DocAndroid</string>
+    <string name="lin_desc">线性布局（LinearLayout）主要以水平或垂直方式来排列界面中的控件。并将控件排列到一条直线上。在线性布局中，如果水平排列，垂直方向上只能放一个控件，如果垂直排列，水平方向上也只能方一个控件。</string>
+    <string name="lin_orientation">orientation属性</string>
+    <string name="lin_gravity">gravity属性</string>
+    <string name="lin_layout_weight">layout_weight属性</string>
+    <string name="lin_gravity_desc">线性布局的控件默认是从左往右排列或从上往下排列，如果想让线性布局中的控件排列对齐右边缘或者底部，可以用gravity属性控制。</string>
+    <string name="lin_layout_weight_desc">LinearLayout中另外一个常用的属性是layout_weight，该属性需要加在LinearLayout的子控件中。其作用是分配线性布局中的剩余空间到该控件上。</string>
+    <string name="lin_w1_b2">给控件2加上android:layout_weight="1"后，会把线性布局剩余空间全部占满。</string>
+    <string name="lin_w1_b1b2">如果给button1和button2都加上android:layout_weight="1"，则两个控件均匀分配剩余空间。</string>
+    <string name="lin_w3_b1_w2_b2">如果给button1加上android:layout_weight="3"，button2加上android:layout_weight="1"，由于剩余的空间是200，button1和button2会按照3:1的比例来分配剩余空间。</string>
+    <string name="lin_h">horizonal</string>
+    <string name="lin_v">vertical</string>
 </resources>
