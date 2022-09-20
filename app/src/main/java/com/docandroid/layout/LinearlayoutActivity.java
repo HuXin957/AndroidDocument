@@ -1,4 +1,4 @@
-package com.docandroid.lin;
+package com.docandroid.layout;
 
 
 import android.annotation.SuppressLint;
@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.widget.TextView;
 
 import com.baseframework.BaseActivity;
-import com.baseframework.interfaces.BindView;
 import com.baseframework.interfaces.DarkNavigationBarTheme;
 import com.baseframework.interfaces.Layout;
 import com.baseframework.interfaces.NavigationBarBackgroundColorRes;

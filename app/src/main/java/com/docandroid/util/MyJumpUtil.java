@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import com.docandroid.lin.LinearlayoutActivity;
+import com.docandroid.layout.LinearlayoutActivity;
 
 
 public class MyJumpUtil extends JumpUtil {

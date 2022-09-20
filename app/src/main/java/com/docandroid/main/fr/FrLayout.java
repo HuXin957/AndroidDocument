@@ -1,7 +1,7 @@
 package com.docandroid.main.fr;
 
 
-import static com.docandroid.ConstantParams.LAYOUTNAME;
+import android.annotation.SuppressLint;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -11,7 +11,8 @@ import com.baseframework.util.JumpParameter;
 import com.docandroid.ConstantParams;
 import com.docandroid.Control;
 import com.docandroid.R;
-import com.docandroid.lin.LinearlayoutActivity;
+import com.docandroid.layout.LinearlayoutActivity;
+import com.docandroid.layout.RelativeLayoutActivity;
 import com.docandroid.main.MainActivity;
 import com.docandroid.main.bean.BeAllWidget;
 import com.docandroid.util.UReadAssets;
@@ -21,12 +22,14 @@ import com.rq.rvlibrary.BaseViewHolder;
 import com.rq.rvlibrary.RecyclerUtil;
 
 import java.util.List;
+
 /**
  * @author: majin
  * @createTime: 2022/9/19
  * @desc: 布局碎片
  */
 //使用 @Layout 注解直接绑定要显示的布局
+@SuppressLint("NonConstantResourceId")
 @Layout(R.layout.fr_layout)
 public class FrLayout extends BaseFragment<MainActivity> {
 
@@ -49,9 +52,9 @@ public class FrLayout extends BaseFragment<MainActivity> {
 
         bigLog(json);
 
-        mAdapter = new  BaseAdapter(me, R.layout.item_main) {
+        mAdapter = new BaseAdapter(me, R.layout.item_main) {
             @Override
-            protected void onBindEasyHolder( BaseAdapter adapter, BaseViewHolder holder, int position, Object o) {
+            protected void onBindEasyHolder(BaseAdapter adapter, BaseViewHolder holder, int position, Object o) {
                 holder.setItemText(R.id.name, ((BeAllWidget) o).name + "      " + ((BeAllWidget) o).cnName);
             }
         };
@@ -63,14 +66,15 @@ public class FrLayout extends BaseFragment<MainActivity> {
     @Override
     public void setEvents() {
         mAdapter.setOnItemClickListener((adapter, holder, o, view, position) -> {
-            JumpParameter jumpParameter=new JumpParameter();
+            JumpParameter jumpParameter = new JumpParameter();
+            jumpParameter.put(ConstantParams.LAYOUTNAME, ((BeAllWidget) o).cnName);
 
             switch (((BeAllWidget) o).id) {
                 case 1:
-                    jumpParameter.put(ConstantParams.LAYOUTNAME,((BeAllWidget) o).cnName);
-                    jump(LinearlayoutActivity.class,jumpParameter);
+                    jump(LinearlayoutActivity.class, jumpParameter);
                     break;
                 case 2:
+                    jump(RelativeLayoutActivity.class, jumpParameter);
                     break;
                 case 3:
                     break;
@@ -87,4 +91,5 @@ public class FrLayout extends BaseFragment<MainActivity> {
 
         });
     }
+
 }

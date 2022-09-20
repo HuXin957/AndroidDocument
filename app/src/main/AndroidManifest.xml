@@ -14,9 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DocAndroid"
         tools:targetApi="31">
-
         <activity
-            android:name=".lin.LinearlayoutActivity"
+            android:name=".RelativeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layout.LinearlayoutActivity"
             android:exported="false" />
         <activity
             android:name=".main.MainActivity"
