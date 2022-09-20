@@ -1,11 +1,14 @@
 package com.docandroid.main.fr;
 
 
+import static com.docandroid.ConstantParams.LAYOUTNAME;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.baseframework.BaseFragment;
 import com.baseframework.interfaces.Layout;
 import com.baseframework.util.JumpParameter;
+import com.docandroid.ConstantParams;
 import com.docandroid.Control;
 import com.docandroid.R;
 import com.docandroid.lin.LinearlayoutActivity;
@@ -64,6 +67,7 @@ public class FrLayout extends BaseFragment<MainActivity> {
 
             switch (((BeAllWidget) o).id) {
                 case 1:
+                    jumpParameter.put(ConstantParams.LAYOUTNAME,((BeAllWidget) o).cnName);
                     jump(LinearlayoutActivity.class,jumpParameter);
                     break;
                 case 2:

@@ -3,16 +3,16 @@ package com.docandroid.lin;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
-import android.os.Bundle;
+import android.widget.TextView;
 
 import com.baseframework.BaseActivity;
+import com.baseframework.interfaces.BindView;
 import com.baseframework.interfaces.DarkNavigationBarTheme;
-import com.baseframework.interfaces.DarkStatusBarTheme;
 import com.baseframework.interfaces.Layout;
 import com.baseframework.interfaces.NavigationBarBackgroundColorRes;
 import com.baseframework.util.JumpParameter;
+import com.docandroid.ConstantParams;
 import com.docandroid.R;
-import com.orhanobut.logger.Logger;
 
 
 /**
@@ -28,16 +28,25 @@ import com.orhanobut.logger.Logger;
 //设置使用底部导航栏暗色图标样式
 @DarkNavigationBarTheme(true)
 public class LinearlayoutActivity extends BaseActivity {
+
+    private TextView mTitle;
+
     @SuppressLint("ResourceType")
     @Override
-    public void initViews() {
-        setTranslucentStatus(true, Color.parseColor(getResources().getString(R.color.purple_700)) );
-
+    protected void init() {
+        super.init();
+        setTranslucentStatus(true, Color.parseColor(getResources().getString(R.color.purple_700)));
     }
 
     @Override
-    public void initDatas(JumpParameter parameter) {
+    public void initViews() {
+        mTitle = findViewById(com.baseframework.R.id.txt_title);
+    }
 
+
+    @Override
+    public void initDatas(JumpParameter parameter) {
+        mTitle.setText(parameter.getString(ConstantParams.LAYOUTNAME));
 
     }
 
@@ -45,5 +54,6 @@ public class LinearlayoutActivity extends BaseActivity {
     public void setEvents() {
 
     }
+
 
 }
