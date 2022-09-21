@@ -11,6 +11,7 @@ import com.baseframework.util.JumpParameter;
 import com.docandroid.ConstantParams;
 import com.docandroid.Control;
 import com.docandroid.R;
+import com.docandroid.layout.FrameLayoutActivity;
 import com.docandroid.layout.LinearlayoutActivity;
 import com.docandroid.layout.RelativeLayoutActivity;
 import com.docandroid.main.MainActivity;
@@ -77,6 +78,7 @@ public class FrLayout extends BaseFragment<MainActivity> {
                     jump(RelativeLayoutActivity.class, jumpParameter);
                     break;
                 case 3:
+                    jump(FrameLayoutActivity.class, jumpParameter);
                     break;
                 case 4:
                     break;
