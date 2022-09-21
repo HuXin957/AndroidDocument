@@ -15,6 +15,9 @@
         android:theme="@style/Theme.DocAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".layout.GridLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".layout.ConstraintLayoutActivity"
             android:exported="false" />
         <activity

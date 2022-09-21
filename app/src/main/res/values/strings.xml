@@ -17,5 +17,7 @@
     <string name="rela_desc">相对布局可以设置某一个视图相对于其他视图的位置，即是以其他控件或父容器为参照物设置位置的。</string>
     <string name="frame_desc">帧布局用于在屏幕上创建一块空白区域，添加到该区域中的每个子控件占一帧，这些帧会一个一个叠加在一起，后加入的控件会叠加在上一个控件上层。因此也可以将FrameLayout称为堆栈布局，或框架布局。</string>
     <string name="constraintlayout_desc"> 约束布局是Android Studio2.2新添加的布局。 它适合使用可视化的方式编写界面布局，优点是减少嵌套，优化布局，可以直接拖拽的方式布局；缺点也显而易见，修改的时候容易错乱，代码可读性变差。</string>
+    <string name="grid_desc">网格布局是Android4.0新增的布局，它实现了控件的交错显示，能够避免因布局嵌套对设备性能的影响，更利于自由布局的开发。 网格布局用一组无限细的直线将绘图区域分成行、列和单元，并指定控件的显示区域和控件在该区域的显示方式</string>
+    <string name="grid_desc2"> </string>
 
 </resources>

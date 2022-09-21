@@ -13,6 +13,8 @@ import com.docandroid.Control;
 import com.docandroid.R;
 import com.docandroid.layout.ConstraintLayoutActivity;
 import com.docandroid.layout.FrameLayoutActivity;
+import com.docandroid.layout.GridLayoutActivity;
+import com.docandroid.layout.LayoutActivity;
 import com.docandroid.layout.LinearlayoutActivity;
 import com.docandroid.layout.RelativeLayoutActivity;
 import com.docandroid.main.MainActivity;
@@ -84,9 +86,9 @@ public class FrLayout extends BaseFragment<MainActivity> {
                     break;
                 case 4:
                     jump(ConstraintLayoutActivity.class, jumpParameter);
-                    Logger.d("ConstraintLayoutActivity");
                     break;
                 case 5:
+                    jump(GridLayoutActivity.class, jumpParameter);
                     break;
                 case 6:
                     break;
