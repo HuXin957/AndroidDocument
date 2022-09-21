@@ -13,4 +13,6 @@
     <string name="lin_w3_b1_w2_b2">如果给button1加上android:layout_weight="3"，button2加上android:layout_weight="1"，由于剩余的空间是200，button1和button2会按照3:1的比例来分配剩余空间。</string>
     <string name="lin_h">horizonal</string>
     <string name="lin_v">vertical</string>
+    <string name="rela_desc">相对布局可以设置某一个视图相对于其他视图的位置，即是以其他控件或父容器为参照物设置位置的。</string>
+
 </resources>
