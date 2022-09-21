@@ -15,6 +15,22 @@
         android:textSize="20sp"
         tools:ignore="RtlSymmetry" />
 
+    <TextView
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d16dp"
+        android:text="@string/commone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d16dp"
+        android:src="@mipmap/gonggong"
+        tools:ignore="ContentDescription" />
+
     <include layout="@layout/recylerview" />
+
 
 </LinearLayout>

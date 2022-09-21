@@ -9,32 +9,14 @@ import com.orhanobut.logger.PrettyFormatStrategy;
 
 public class MyApp extends BaseApp<MyApp> {
 
-    private static MyApp instance;
-
-    public static MyApp getInstance() {
-        if (instance == null) {
-            synchronized (MyApp.class) {
-                if (instance == null) {
-                    instance = new MyApp();
-                }
-            }
-        }
-        return instance;
-    }
 
 
     @Override
     public void init() {
-
-    }
-
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        instance = this;
         if (BuildConfig.DEBUG) initLogger();
 
     }
+
 
 
     /**

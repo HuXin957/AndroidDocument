@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">DocAndroid</string>
+    <string name="commone">公共属性</string>
     <string name="tab_layout">布局</string>
     <string name="tab_widget">组件</string>
     <string name="lin_desc">线性布局（LinearLayout）主要以水平或垂直方式来排列界面中的控件。并将控件排列到一条直线上。在线性布局中，如果水平排列，垂直方向上只能放一个控件，如果垂直排列，水平方向上也只能方一个控件。</string>
@@ -14,5 +15,7 @@
     <string name="lin_h">horizonal</string>
     <string name="lin_v">vertical</string>
     <string name="rela_desc">相对布局可以设置某一个视图相对于其他视图的位置，即是以其他控件或父容器为参照物设置位置的。</string>
+    <string name="frame_desc">帧布局用于在屏幕上创建一块空白区域，添加到该区域中的每个子控件占一帧，这些帧会一个一个叠加在一起，后加入的控件会叠加在上一个控件上层。因此也可以将FrameLayout称为堆栈布局，或框架布局。</string>
+    <string name="constraintlayout_desc"> 约束布局是Android Studio2.2新添加的布局。 它适合使用可视化的方式编写界面布局，优点是减少嵌套，优化布局，可以直接拖拽的方式布局；缺点也显而易见，修改的时候容易错乱，代码可读性变差。</string>
 
 </resources>

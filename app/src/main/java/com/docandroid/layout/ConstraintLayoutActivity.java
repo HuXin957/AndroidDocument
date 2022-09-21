@@ -8,14 +8,15 @@ import com.baseframework.util.JumpParameter;
 import com.docandroid.R;
 
 
+
 /**
  * @author: majin
  * @createTime: 2022/9/21
- * @desc: 相对布局
+ * @desc: 约束布局
  */
 @SuppressLint("NonConstantResourceId")
-@Layout(R.layout.activity_frame_layout)
-public class FrameLayoutActivity extends LayoutActivity {
+@Layout(R.layout.activity_constraint_layout)
+public class ConstraintLayoutActivity extends LayoutActivity {
 
 
     @Override
@@ -28,7 +29,6 @@ public class FrameLayoutActivity extends LayoutActivity {
         super.initDatas(parameter);
 
     }
-
     @Override
     public void setEvents() {
 

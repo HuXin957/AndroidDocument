@@ -11,6 +11,7 @@ import com.baseframework.util.JumpParameter;
 import com.docandroid.ConstantParams;
 import com.docandroid.Control;
 import com.docandroid.R;
+import com.docandroid.layout.ConstraintLayoutActivity;
 import com.docandroid.layout.FrameLayoutActivity;
 import com.docandroid.layout.LinearlayoutActivity;
 import com.docandroid.layout.RelativeLayoutActivity;
@@ -18,6 +19,7 @@ import com.docandroid.main.MainActivity;
 import com.docandroid.main.bean.BeAllWidget;
 import com.docandroid.util.UReadAssets;
 import com.google.gson.reflect.TypeToken;
+import com.orhanobut.logger.Logger;
 import com.rq.rvlibrary.BaseAdapter;
 import com.rq.rvlibrary.BaseViewHolder;
 import com.rq.rvlibrary.RecyclerUtil;
@@ -81,6 +83,8 @@ public class FrLayout extends BaseFragment<MainActivity> {
                     jump(FrameLayoutActivity.class, jumpParameter);
                     break;
                 case 4:
+                    jump(ConstraintLayoutActivity.class, jumpParameter);
+                    Logger.d("ConstraintLayoutActivity");
                     break;
                 case 5:
                     break;
