@@ -26,26 +26,19 @@ import com.docandroid.R;
 @NavigationBarBackgroundColorRes(R.color.white)
 //设置使用底部导航栏暗色图标样式
 @DarkNavigationBarTheme(true)
-public class LinearlayoutActivity extends BaseActivity {
+public class LinearlayoutActivity extends LayoutActivity {
 
-    private TextView mTitle;
 
-    @SuppressLint("ResourceType")
-    @Override
-    protected void init() {
-        super.init();
-        setTranslucentStatus(true, Color.parseColor(getResources().getString(R.color.purple_700)));
-    }
 
     @Override
     public void initViews() {
-        mTitle = findViewById(com.baseframework.R.id.txt_title);
+        super.initViews();
     }
 
 
     @Override
     public void initDatas(JumpParameter parameter) {
-        mTitle.setText(parameter.getString(ConstantParams.LAYOUTNAME));
+        super.initDatas(parameter);
 
     }
 
