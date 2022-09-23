@@ -17,6 +17,7 @@ import com.docandroid.layout.GridLayoutActivity;
 import com.docandroid.layout.LayoutActivity;
 import com.docandroid.layout.LinearlayoutActivity;
 import com.docandroid.layout.RelativeLayoutActivity;
+import com.docandroid.layout.TableLayoutActivity;
 import com.docandroid.main.MainActivity;
 import com.docandroid.main.bean.BeAllWidget;
 import com.docandroid.util.UReadAssets;
@@ -91,6 +92,7 @@ public class FrLayout extends BaseFragment<MainActivity> {
                     jump(GridLayoutActivity.class, jumpParameter);
                     break;
                 case 6:
+                    jump(TableLayoutActivity.class, jumpParameter);
                     break;
                 default:
                     break;

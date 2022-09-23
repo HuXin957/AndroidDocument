@@ -18,6 +18,6 @@
     <string name="frame_desc">帧布局用于在屏幕上创建一块空白区域，添加到该区域中的每个子控件占一帧，这些帧会一个一个叠加在一起，后加入的控件会叠加在上一个控件上层。因此也可以将FrameLayout称为堆栈布局，或框架布局。</string>
     <string name="constraintlayout_desc"> 约束布局是Android Studio2.2新添加的布局。 它适合使用可视化的方式编写界面布局，优点是减少嵌套，优化布局，可以直接拖拽的方式布局；缺点也显而易见，修改的时候容易错乱，代码可读性变差。</string>
     <string name="grid_desc">网格布局是Android4.0新增的布局，它实现了控件的交错显示，能够避免因布局嵌套对设备性能的影响，更利于自由布局的开发。 网格布局用一组无限细的直线将绘图区域分成行、列和单元，并指定控件的显示区域和控件在该区域的显示方式</string>
-    <string name="grid_desc2"> </string>
+    <string name="table_desc">表格布局将子元素的位置分配到行或列中，与网格布局不同的是，它不需要明确多少行、多少列。一个TableLayout由许多TableRow组成，每个TableRow都会定义一个Row。</string>
 
 </resources>
